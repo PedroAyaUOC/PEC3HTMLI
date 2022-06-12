@@ -11,12 +11,12 @@
 
 
 	<!-- CSS -->
-	<link async rel="stylesheet" href="css/global.css" type="text/css" />
-    <link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/global.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Nota: no me funcionaba el paquete local (no sé porqué), por lo que tuve que importar desde cdn -->
 
     <!-- JS -->
-    <script defer type="module" src="js/app.js"></script>
+    <script type="module" src="js/app.js"></script>
 
 </head>
 <body>
@@ -27,7 +27,7 @@
             <!-- Titulo -->
             <div id="logo">
                 <a href="index.html">
-                    <img id="slide-in" src="img/logo-top-comicos.png" class="logo animation" alt="logo"> 
+                    <img id="slide-in" src="img/logo-top-comicos.png" width="60px" height="60px" class="logo animation" alt="logo"> 
                     <span class="animated2 fadeInUp">TOP CÓMICOS</span>
                 </a>
             </div>
@@ -122,7 +122,7 @@
         <h2>Te invitamos a un aperitivo</h2>
         <br>
         <div class="container">
-            <iframe src="https://www.youtube.com/embed/xd0_fAgSH1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe loading="lazy" src="https://www.youtube.com/embed/xd0_fAgSH1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <br>
     </div>
@@ -139,7 +139,7 @@
                     <picture>
                         <source srcset="img/logo-footer.png?as=avif" type="image/avif" />
                         <source srcset="img/logo-footer.png?as=webp" type="image/webp" />
-                        <img  src="img/logo-footer.png" class="logo-footer" alt="logo footer" loading="lazy" >
+                        <img  src="img/logo-footer.png" class="logo-footer" alt="logo footer" width="229px" height="116px" loading="lazy" >
                     </picture>
                 </div>  <!-- ./flex-row-item -->
 
