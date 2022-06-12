@@ -1,0 +1,9 @@
+{
+  "plugins" : {
+    "postcss-responsive-images" : true,
+    "postcss-grid-kiss" : true,
+    "postcss-import": {},
+    "postcss-parcel-import": {},
+    "cssnano": {}
+  }
+}

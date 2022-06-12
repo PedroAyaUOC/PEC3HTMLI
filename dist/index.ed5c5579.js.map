@@ -1,0 +1,1 @@
+{"mappings":"AAEAA,QAAQC,IAAK,YAAgBC,OADlB","sources":["src/js/app.js"],"sourcesContent":["\nlet text = \"Bienvenido a Top cómicos\";\nconsole.log(`Mensaje: ${text}`);"],"names":["console","log","concat"],"version":3,"file":"index.ed5c5579.js.map"}

@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+<head>
+
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Top comicos web de humor"/>
+	<title>TopComicos - Tu web de chistes viejunos</title>
+	
+	<!-- CSS -->
+	<link async rel="stylesheet" href="css/global.css" type="text/css" />
+    <link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Nota: no me funcionaba el paquete local (no sé porqué), por lo que tuve que importar desde cdn -->
+        
+    <!-- JS -->
+    <script defer type="module" src="js/app.js"></script>
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <!-- Titulo -->
+            <div id="logo">
+                <a href="index.html">
+                    <img  src="img/logo-top-comicos.png" class="logo" alt="logo"> 
+                    TOP CÓMICOS
+                </a>
+            </div>
+
+            <nav id="mainMenu">
+                <ul>
+                    <li><a href="index.html">Portada</a></li>
+                    <li class="selected"><a href="presentacion.html">Presentación</a></li>
+                    <li><a href="comicos.html">Cómicos</a></li>
+                    <li><a href="enlaces.html">Enlaces</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main>
+        
+        <div class="container">
+           
+            <h1>Sobre Top Cómicos</h1>
+
+            <div class="flex-row-container-4">
+
+                <div class="flex-row-item-4 text-center">
+                    <h2 class="textLeft">¿Quiénes somos?</h2>
+
+                    <img src="img/emoji.svg" class="emoji" alt="emoji">
+
+                    <p>
+                        Top Cómicos es una página web amateur que recopila información y contenidos sobre importantes cómicos de nuestro
+                        país de las décadas de los 80 y 90 con el fin recuperar el humor de aquellos años.
+                    </p>
+
+                    <h2 class="textLeft">Objetivos</h2>
+
+                    <p>
+                        Nuestro objetivo es ofrecer acceso desde nuestra web a esta clase de contenidos para que los usuarios 
+                        puedan consultar el tipo de humor de aquellos años y compararlo con el humor de hoy en día. 
+                    </p>
+                   
+                    <p>
+                        Mucho ha cambiado socialmente desde entonces y creemos que resulta necesario tener acceso al humor de 
+                        aquellas décadas, como indicador de la evolución de nuestra sociedad y compararlo con los elementos actuales, 
+                        además de echar también unas risas.
+                    </p>
+
+
+                </div>  <!-- ./flex-row-item -->
+
+                <div class="flex-row-item-4 textJusfity">
+  
+                    <h2 class='textLeft'>Contenidos</h2>
+                    <p>Ofrecemos un conjunto de secciones en constante crecimiento, donde tratamos de recopilar todo el contenido 
+                        humorístico de los 80 y 90. Nuestras secciones son:
+                    </p>
+                    <ul>
+                        <li><strong>Portada</strong>: página de bienvenida donde informa de manera general de nuestros contenidos a modo de escaparate.</li>
+                        <br>
+                        <li><strong>Cómicos</strong>: listado de cómicos disponibles en nuestra web. Desde ahí podemos acceder a la ficha de cada cómico con su información y actuaciones</li>
+                        <br>
+                        <li><strong>Enlaces</strong>: si te ha gustado nuestra temática y quieres acceder a más contenidos, aquí encontrarás un listado de links a sitios colaboradores y similares.</li>
+                    </ul>
+                    
+                    <p>Actualmente estamos trabajando para ampliar nuestros contenidos con la idea de ofrecer un gran repertorio humorístico de estas décadas.
+                    </p>
+                    
+                    <h2 class="textLeft">Colabora con nosotros</h2>
+
+                    <p>
+                        ¿Tienes un chiste o actuación favorita y no aparece en nuestra web? No lo dudes y colabora con nosotros, envíanos tus opiniones o sugerencias. 
+                        Estaremos encantados de contactar contigo.
+                    </p>
+                   
+                </div>  <!-- ./flex-row-item -->
+            </div>  <!-- ./flex-row-container -->
+
+
+            <h2>Equipo Top Cómicos</h2>
+
+            <div class="flex-row-container-2">
+
+                <div class="flex-row-item-2">
+                    <article class="card">
+                        <picture>
+                            <source srcset="img/pedro.jpg?as=avif" type="image/avif" />
+                            <source srcset="img/pedro.jpg?as=webp" type="image/webp" />
+                            <img src="img/pedro.jpg" alt="pedro" loading="lazy">
+                        </picture>
+                        
+                        <h3><a href="#">Pedro López Sánchez</a></h3>
+                        <p>Amante del buen humor desde muy pequeño, creció con el humor televisivo de la época y que añora desde entonces.
+                        </p>
+                    </article>
+                </div>  <!-- ./flex-row-item -->
+
+                <div class="flex-row-item-2">
+                    <article class="card">
+                        <picture>
+                            <source srcset="img/ana.jpg?as=avif" type="image/avif" />
+                            <source srcset="img/ana.jpg?as=webp" type="image/webp" />
+                            <img src="img/ana.jpg" alt="ana" loading="lazy">
+                        </picture>
+                        
+                        <h3><a href="#">Ana María Pérez Parra</a></h3>
+                        <p>Humorista de profesión, toma como referencia el humor de su infancia adaptándolo a los nuevos tiempos. Los clásicos nunca mueren.</p>
+                    </article>
+                </div>  <!-- ./flex-row-item -->
+
+            </div>  <!-- ./flex-row-container -->
+
+               
+
+        </div>  <!-- ./container -->
+
+        
+    
+    </main>
+    <br><br><br>
+
+    <!-- Extral FullWidth -->
+    <div class="divFocus padding-sm">
+        <h2>Nuestro chiste favorito</h2>
+        <br>
+        <div class="container">
+            <iframe src="https://www.youtube.com/embed/ncQU6iBn5Fc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br>
+    </div>
+
+    
+
+    <!-- FOOTER -->
+    <footer>
+        <div class='container'>
+            
+            <div class="flex-row-container-2">
+
+                <div class="flex-row-item-2">
+                    <picture>
+                        <source srcset="img/logo-footer.png?as=avif" type="image/avif" />
+                        <source srcset="img/logo-footer.png?as=webp" type="image/webp" />
+                        <img  src="img/logo-footer.png" class="logo-footer" alt="logo footer" loading="lazy">
+                    </picture>
+                </div>  <!-- ./flex-row-item -->
+
+                <div class="flex-row-item-2">
+                    <ul>
+                        <li class="title">NAVEGACIÓN</li>
+                        <li><a href="index.html">Portada</a></li>
+                        <li><a href="presentacion.html">Presentación</li>
+                        <li><a href="comicos.html">Cómicos</a></li>
+                        <li><a href="enlaces.html">Enlaces</a></li>
+                    </ul>
+                </div>  <!-- ./flex-row-item -->
+
+                <div class="flex-row-item-2">
+                    <ul>
+                        <li class="title">INFORMACIÓN LEGAL</li>
+                        <li><a href="#">Aviso Legal</a></li>
+                        <li><a href="#">Política de privacidad</li>
+                        <li><a href="#">Condiciones de uso</a></li>
+                        <li><a href="#">Páginas asociadas</a></li>
+                    </ul>
+                </div>  <!-- ./flex-row-item -->
+
+            </div>  <!-- ./flex-row-container-->
+           
+        </div>
+
+    </footer>
+
+</body>
+</html>
+

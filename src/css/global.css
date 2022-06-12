@@ -1,0 +1,507 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400&display=swap");
+@import "npm:../../@fortawesome/fontawesome-free/css/fontawesome.min.css";
+/*Nota: no se porqué, pero me falla la importación de iconos, por lo que tengo que cargarlos por cdn*/
+
+
+/**** GLOBAL ****/
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+    height: 100vh; 
+	margin: 0;
+    color: rgb(0,0,0);
+	background-color: rgb(244, 244, 244);
+}
+
+.container{
+	width: 100%;
+	margin: auto;
+}
+
+.container50{
+	width: 60%;
+	margin: auto;
+}
+
+@media screen and (max-width: 576px), screen and (orientation: portrait){
+	.container{
+		width:90% !important;
+	}
+
+    main{
+        width: 95% !important;
+    }
+
+    .container50{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+a{text-decoration: none;
+color: #669900;}
+
+
+h1{
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 70px 0 40px 0;
+}
+
+h1.index{margin-top:40px;}
+
+h2{
+    text-align: center;
+    font-size: 1.5rem;
+    margin:35px 0 25px 0;
+}
+
+p{
+    margin: 25px 0 25px 0;
+    line-height: 150%;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/*--- HEADER ---*/
+header{
+	background-color: white;
+	box-shadow: 0px 3px 3px rgb(0 0 0 / 1%);
+	padding: 15px 0 0 0;
+}
+
+
+#logo {
+	font-weight: 800;
+    text-align: center;
+	font-size: 3rem;
+    margin: 10px 0 25px 0;
+}
+
+#logo a:link , #logo a:visited{
+	text-decoration: none;
+	color: #669900;;
+}
+
+img.logo{
+    width: 60px;
+    vertical-align: -10px;
+}
+
+/*ESTILO DEL MENÚ*/
+
+#mainMenu {
+    text-align: center;
+    background-color: #669900;
+}
+
+#mainMenu ul{
+	list-style: none;
+	font-weight: bold;
+	font-size: 1rem; 
+	margin: 0;
+    padding: 0;
+}
+
+#mainMenu li{
+	padding: 30px 25px;
+}
+
+#mainMenu li:hover, #mainMenu li.selected{
+	background-color: #7cbb00;
+}
+
+@media screen and (min-width: 576px) and (orientation: landscape){
+	#mainMenu li{
+		display: inline-block; 
+		padding: 20px 15px !important; 
+	}
+}
+
+
+
+@media screen and (max-width: 576px), screen and (orientation: portrait){
+	header{text-align: center;}
+    
+    #mainMenu li a{
+        padding: 15px 15px !important; 
+    }
+
+    #mainMenu ul{
+        font-size: 0.9rem;
+    }
+
+    #mainMenu li{
+        padding: 15px 25px;
+    }
+    
+}
+
+
+
+#mainMenu li a{
+	text-decoration: none; 
+	color: #fff;
+    padding: 20px 25px; 
+}
+
+
+/************************* MAIN *************************/
+main{
+	padding:0;
+    width: 70%;
+    margin: auto;
+}
+
+
+/* PORTADA */
+
+.card img{width:100%;}
+.card p.date{
+    font-size:1rem; 
+    margin: 10px 0;   
+}
+.card p{font-size: 1rem;}
+.card h3{margin: 10px 0 15px 0;}
+.card a{
+    color:#669900 !important;
+    font-weight: 800;
+}
+
+
+.flex-row-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: center;
+    gap: 40px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+.flex-row-container > .flex-row-item {
+    flex: 1 1 0;      /*grow | shrink | basis */
+    min-height: 400px;
+}
+
+.clipart-tc{
+    margin-top:25px;
+    width: 100%;
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+@media screen and (max-width: 576px), screen and (orientation: portrait){
+    #nav li {
+      flex: 1 1 100%;
+      padding: 5px;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+
+    .flex-row-container > .flex-row-item {
+        flex: 1 1 100%;      
+    }
+
+    .flex-row-container {
+        gap: 40px;
+        margin-top:15px;
+        margin-bottom: 40px;
+    }
+}
+
+
+.divFocus {
+    background-color: rgb(102 153 0 / 14%);;
+    text-align: center;
+}
+.divFocus h2{margin: 0 0 10px 0;}
+
+
+/******************* FOOTER ***********************/
+footer{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 25px 0 10px 0;
+    text-align: center;
+}
+
+footer .container{width:80%;}
+
+footer p{font-size:0.9rem; margin:10px; text-align: center;}
+
+footer ul{
+	list-style: none;
+	font-weight: 300;
+	font-size: 0.9em; 
+	padding: 0;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+
+footer li{
+    display: block; 
+    padding-right: 25px; 
+	padding: 3px 5px;
+    margin-bottom: 10px;
+}
+
+footer li a{
+	text-decoration: none;
+	color: #fff;
+    font-weight: 600;
+}
+
+footer li.title{font-weight: bold; font-size:1em;}
+
+iframe{width: 560px; height: 315px;}
+
+footer .flex-row-item-2 {
+    background-color: #000;
+    padding:10px;
+}
+
+footer .logo-footer{width: 80%; margin-top: 25px;}
+
+@media screen and (max-width: 576px), screen and (orientation: portrait){
+	
+    footer{text-align: center;}
+
+    footer .container{width:95%;}
+
+    footer #legalMenu li{display: block;}
+
+    iframe{width: 100%; height: 315px;}
+
+    footer .flex-row-container-2{gap: 0;}
+}
+
+
+/******************* AUXILIARES ***********************/
+.padding-sm{padding: 40px;}
+.marginB-xs{margin-bottom:80px;}
+.textLeft{text-align: left !important;}
+.img-responsive{width:100%;height:auto;}
+.card-img{
+    background-color: #fff;
+    border-radius: 5px;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    padding: 10px 10px;
+}
+
+
+/************* COLUMNAS ***************/
+
+.flex-row-container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: center;
+    gap: 40px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+.flex-row-container-2 > .flex-row-item-2 {
+    flex: 1 1 25%;      /*grow | shrink | basis */
+}
+
+.flex-row-item-2 {
+    background-color: #fff;
+    padding:10px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 576px), screen and (orientation: portrait){
+
+    .flex-row-container-2 > .flex-row-item-2 {
+        flex: 1 1 100%;      
+    }
+
+    .flex-row-container-2 {
+        gap: 40px;
+        margin-top:15px;
+        margin-bottom: 40px;
+    }
+}
+
+/************* COLUMNAS PARTIDAS *****************/
+
+.flex-row-container-3 {
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-top:15px;
+    margin-bottom: 40px;
+    background-color: #fff;
+}
+
+.flex-row-container-3 > .flex-row-item-3 {
+    flex: auto;      /*grow | shrink | basis */
+    /*min-height:295px;*/
+}
+
+.flex-row-item-3 {
+    background-color: #fff;
+    padding:10px;
+    
+}
+
+.flex-row-item-3 ul{padding-inline-start: 20px !important;}
+.flex-row-item-3 li{margin-bottom:10px;}
+
+#fotoComico{width: 200px;}
+
+@media screen and (max-width: 576px), screen and (orientation: portrait){
+
+    .flex-row-container-3 > .flex-row-item-3 {
+        flex: 1 1 100%;    
+    }
+
+    .flex-row-container-3 {
+        flex-wrap: wrap;  
+    }
+
+    #fotoComico{width: 100%;}
+}
+
+/************* PRESENTACIÓN *****************/
+
+.textJusfity p, .textJusfity li{text-align:justify !important;}
+
+blockquote{
+    margin: 0 0 20px 0;
+    font-size: 0.9rem;
+    background-color: rgb(255, 255, 255);
+    border-left:4px solid rgb(189, 55, 0);
+    padding: 10px 15px 20px 15px;
+}
+
+ol li{font-size:1rem; margin-bottom: 20px;}
+
+.flex-row-container-4 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: center;
+    gap: 40px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+.flex-row-container-4 > .flex-row-item-4 {
+    flex: 1 1 40%;      /*grow | shrink | basis */
+    min-height: 300px;
+}
+
+.flex-row-container-4 p{font-size:1rem !important;}
+
+@media screen and (max-width: 576px), screen and (orientation: portrait){
+
+    .flex-row-container-4 > .flex-row-item-4 {
+        flex: 1 1 100%;      
+    }
+}
+
+
+
+.camiseta{
+    width: 200px;
+    border: 1px solid #d7d7d7;
+}
+
+.padding-30{
+    padding: 0 30px !important;
+}
+.padding-20{
+    padding: 20px !important;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+
+/******* Animaciones *********/
+
+.emoji{
+    width:40%;
+    animation-name: balance;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 110ms;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+}
+
+@keyframes balance { 
+	0% { margin-top: 0; } 
+	15% { margin-top: 0; transform: rotateX(-50deg); }	
+	30% { margin-top: 0; transform: rotateX(50deg); } 
+	45% { margin-top: 0; transform: rotateX(-30deg); } 
+	60% { margin-top: 0; transform: rotateX(30deg); } 
+	75% { margin-top: 0; transform: rotateX(-30deg); } 
+	100% { margin-top: 0; transform: rotateX(0deg);} 
+}
+
+
+/*  FADE IN UP  */
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+
+.animated {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both
+}
+
+.animated2 {
+    animation-duration: 3.5s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 3.5s;
+    -webkit-animation-fill-mode: both
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+/*  SLIDE IN  */
+.animation {
+    position: relative;
+    animation: animation 2s ease-out;
+}
+
+#slide-in {
+    text-align: center;
+    color: #fff;
+  }
+
+@keyframes animation {
+    0% {
+      opacity: 0;
+      left: -700px;
+    }
+
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
